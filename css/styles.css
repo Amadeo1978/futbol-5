@@ -139,12 +139,12 @@ ul, ol {
 }
 
 .btn-secondary {
-    background: var(--white);
-    color: var(--green-600);
+    background: #f59e0b;
+    color: var(--white);
 }
 
 .btn-secondary:hover {
-    background: var(--green-50);
+    background: #d97706;
 }
 
 .btn-outline {
@@ -535,6 +535,31 @@ ul, ol {
 
 .schedule-card .spots.full {
     background: rgba(239,68,68,0.8);
+}
+
+.schedule-card .city {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    opacity: 0.95;
+}
+
+.schedule-card .map-link {
+    display: inline-block;
+    background: rgba(255,255,255,0.25);
+    color: var(--white);
+    padding: 6px 12px;
+    border-radius: var(--radius);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.schedule-card .map-link:hover {
+    background: rgba(255,255,255,0.4);
+    transform: translateY(-1px);
 }
 
 /* ============================================
