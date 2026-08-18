@@ -263,8 +263,8 @@ ul, ol {
    NAVBAR
    ============================================ */
 .navbar {
-    background: var(--white);
-    box-shadow: var(--shadow);
+    background: #0a1f10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     padding: 12px 0;
     position: sticky;
     top: 0;
@@ -291,7 +291,7 @@ ul, ol {
 .navbar-brand span {
     font-size: 22px;
     font-weight: 800;
-    color: var(--green-600);
+    color: var(--green-400);
 }
 
 .navbar-nav {
@@ -301,16 +301,16 @@ ul, ol {
 }
 
 .navbar-nav a {
-    color: var(--gray-700);
+    color: var(--white);
     font-weight: 500;
 }
 
 .navbar-nav a:hover {
-    color: var(--green-600);
+    color: var(--green-400);
 }
 
 .navbar-nav a.active {
-    color: var(--green-600);
+    color: var(--green-400);
     font-weight: 600;
 }
 
@@ -320,17 +320,17 @@ ul, ol {
     gap: 12px;
     margin-left: 16px;
     padding-left: 16px;
-    border-left: 1px solid var(--gray-200);
+    border-left: 1px solid rgba(255,255,255,0.2);
 }
 
 .navbar-user span {
-    color: var(--gray-700);
+    color: var(--white);
 }
 
 .btn-logout {
     background: none;
     border: none;
-    color: var(--gray-500);
+    color: rgba(255,255,255,0.6);
     cursor: pointer;
     font-size: 14px;
     font-family: inherit;
@@ -342,7 +342,7 @@ ul, ol {
 
 /* HOME NAVBAR */
 .navbar-home {
-    background: rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     box-shadow: none;
 }
