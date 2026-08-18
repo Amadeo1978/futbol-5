@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.svg">
+    <title>Detalle del Partido - Futbol5</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+        <a href="dashboard.html" class="navbar-brand">
+            <img src="../img/logo.svg" alt="Futbol5">
+            <span>FUTBOL5</span>
+        </a>
+        <div class="navbar-nav">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="matches.html" class="active">Partidos</a>
+            <a href="create-match.html">Crear Partido</a>
+            <div class="navbar-user">
+                <span>Juan Pérez</span>
+                <button class="btn-logout">Cerrar sesión</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="dashboard-content">
+    <a href="matches.html" class="back-btn">← Volver a partidos</a>
+
+    <div class="detail-card">
+        <!-- HEADER -->
+        <div class="detail-header">
+            <div>
+                <h1>Fútbol5 - Lunes</h1>
+                <p>Organizado por Carlos López</p>
+            </div>
+            <span class="badge badge-open" style="font-size:16px; padding:8px 16px;">Abierto</span>
+        </div>
+
+        <!-- BODY -->
+        <div class="detail-body">
+            <!-- INFO -->
+            <div class="detail-info">
+                <h2>📋 Información del Partido</h2>
+
+                <div class="detail-row">
+                    <div class="icon">📅</div>
+                    <div>
+                        <div class="label">Fecha</div>
+                        <div class="value">Lunes 18 de Agosto, 2026</div>
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="icon">⏰</div>
+                    <div>
+                        <div class="label">Horario</div>
+                        <div class="value">20:00 a 21:00 hs</div>
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="icon">📍</div>
+                    <div>
+                        <div class="label">Ubicación</div>
+                        <div class="value">Cancha Municipal - Av. Principal 123</div>
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="icon">👥</div>
+                    <div>
+                        <div class="label">Jugadores</div>
+                        <div class="value">7 de 10 confirmados</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="icon">⏰</div>
+                    <div>
+                        <div class="label">Confirmar antes de</div>
+                        <div class="value">Domingo 17 de Agosto, 20:00 hs (24hs antes)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JUGADORES -->
+            <div class="detail-info">
+                <h2>👥 Jugadores Confirmados (7/10)</h2>
+
+                <div class="player-item">
+                    <div class="player-avatar">CL</div>
+                    <div class="player-info">
+                        <div class="name">Carlos López</div>
+                        <div class="username">Organizador • Nivel Oro 🥇</div>
+                    </div>
+                </div>
+
+                <div class="player-item">
+                    <div class="player-avatar">MG</div>
+                    <div class="player-info">
+                        <div class="name">María García</div>
+                        <div class="username">Nivel Plata 🥈</div>
+                    </div>
+                </div>
+
+                <div class="player-item">
+                    <div class="player-avatar">PM</div>
+                    <div class="player-info">
+                        <div class="name">Pedro Martínez</div>
+                        <div class="username">Nivel Bronce 🥉</div>
+                    </div>
+                </div>
+
+                <div class="player-item">
+                    <div class="player-avatar">AR</div>
+                    <div class="player-info">
+                        <div class="name">Ana Rodríguez</div>
+                        <div class="username">Nivel Oro 🥇</div>
+                    </div>
+                </div>
+
+                <div class="player-item">
+                    <div class="player-avatar">LF</div>
+                    <div class="player-info">
+                        <div class="name">Luis Fernández</div>
+                        <div class="username">Nivel Plata 🥈</div>
+                    </div>
+                </div>
+
+                <div class="player-item">
+                    <div class="player-avatar">CS</div>
+                    <div class="player-info">
+                        <div class="name">Camila Sánchez</div>
+                        <div class="username">Nivel Bronce 🥉</div>
+                    </div>
+                </div>
+
+                <div class="player-item">
+                    <div class="player-avatar">DR</div>
+                    <div class="player-info">
+                        <div class="name">Diego Ramírez</div>
+                        <div class="username">Nivel Diamante 💎</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="detail-actions">
+            <button class="btn btn-primary btn-lg" style="flex:1;">✅ Unirse al Partido</button>
+            <button class="btn btn-outline btn-lg" style="color:var(--green-600);border-color:var(--green-300);">📱 Compartir</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

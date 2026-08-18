@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.svg">
+    <title>Dashboard - Futbol5</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+        <a href="dashboard.html" class="navbar-brand">
+            <img src="../img/logo.svg" alt="Futbol5">
+            <span>FUTBOL5</span>
+        </a>
+        <div class="navbar-nav">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="matches.html">Partidos</a>
+            <a href="create-match.html">Crear Partido</a>
+            <div class="navbar-user">
+                <span>Juan Pérez</span>
+                <button class="btn-logout">Cerrar sesión</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- DASHBOARD -->
+<div class="dashboard-content">
+    <h1>¡Hola, Juan! 👋</h1>
+    <p class="subtitle">Bienvenido a tu panel de control</p>
+
+    <!-- STATS -->
+    <div class="ranking-grid" style="margin-bottom:32px;">
+        <div class="rank-card rank-bronce">
+            <div class="rank-badge">📅</div>
+            <h3>3</h3>
+            <div class="discount" style="color:var(--white);">Partidos</div>
+            <div class="desc">Próximo: Lunes 20:00</div>
+        </div>
+        <div class="rank-card rank-plata">
+            <div class="rank-badge">✅</div>
+            <h3>8</h3>
+            <div class="discount" style="color:var(--white);">Asistencias</div>
+            <div class="desc">Nivel: Oro (15%)</div>
+        </div>
+        <div class="rank-card rank-oro">
+            <div class="rank-badge">⭐</div>
+            <h3>4.5</h3>
+            <div class="discount" style="color:var(--white);">Tu Calificación</div>
+            <div class="desc">Basada en participación</div>
+        </div>
+        <div class="rank-card rank-diamante">
+            <div class="rank-badge">💰</div>
+            <h3>15%</h3>
+            <div class="discount" style="color:var(--white);">Tu Descuento</div>
+            <div class="desc">Nivel Oro activo</div>
+        </div>
+    </div>
+
+    <div class="dashboard-grid">
+        <!-- MIS PARTIDOS -->
+        <div class="dash-card">
+            <div class="dash-card-header">
+                <h2>📅 Mis Partidos Próximos</h2>
+                <a href="matches.html">Ver todos →</a>
+            </div>
+
+            <div class="match-card" style="margin-bottom:12px;">
+                <div class="match-card-header">
+                    <h3>Fútbol5 - Lunes</h3>
+                    <span class="badge badge-open">Abierto</span>
+                </div>
+                <div class="match-card-body">
+                    <p>📅 Lunes 18 de Agosto, 20:00 hs</p>
+                    <p>📍 Cancha Municipal - Av. Principal 123</p>
+                    <p>👥 7/10 jugadores confirmados</p>
+                </div>
+            </div>
+
+            <div class="match-card" style="margin-bottom:12px;">
+                <div class="match-card-header">
+                    <h3>Fútbol5 - Miércoles</h3>
+                    <span class="badge badge-full">Completo</span>
+                </div>
+                <div class="match-card-body">
+                    <p>📅 Miércoles 20 de Agosto, 20:00 hs</p>
+                    <p>📍 Polideportivo Central</p>
+                    <p>👥 10/10 jugadores confirmados</p>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-card-header">
+                    <h3>Fútbol5 - Viernes</h3>
+                    <span class="badge badge-open">Abierto</span>
+                </div>
+                <div class="match-card-body">
+                    <p>📅 Viernes 22 de Agosto, 20:00 hs</p>
+                    <p>📍 Club Atlético Norte</p>
+                    <p>👥 5/10 jugadores confirmados</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PARTIDOS DISPONIBLES -->
+        <div class="dash-card">
+            <div class="dash-card-header">
+                <h2>⚽ Partidos Disponibles</h2>
+                <a href="matches.html">Ver todos →</a>
+            </div>
+
+            <div class="match-card" style="margin-bottom:12px;">
+                <div class="match-card-header">
+                    <h3>Fútbol5 - Lunes</h3>
+                    <span class="badge badge-open">Abierto</span>
+                </div>
+                <div class="match-card-body">
+                    <p>📅 Lunes 18 de Agosto, 20:00 hs</p>
+                    <p>📍 Cancha Municipal - Av. Principal 123</p>
+                    <p>👥 7/10 - Quedan 3 lugares</p>
+                </div>
+                <div class="match-card-footer">
+                    <span class="organizer">Organiza: Carlos López</span>
+                    <button class="btn btn-primary btn-sm">Unirse</button>
+                </div>
+            </div>
+
+            <div class="match-card" style="margin-bottom:12px;">
+                <div class="match-card-header">
+                    <h3>Fútbol5 - Viernes</h3>
+                    <span class="badge badge-open">Abierto</span>
+                </div>
+                <div class="match-card-body">
+                    <p>📅 Viernes 22 de Agosto, 20:00 hs</p>
+                    <p>📍 Club Atlético Norte</p>
+                    <p>👥 5/10 - Quedan 5 lugares</p>
+                </div>
+                <div class="match-card-footer">
+                    <span class="organizer">Organiza: María García</span>
+                    <button class="btn btn-primary btn-sm">Unirse</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-card-header">
+                    <h3>Fútbol5 - Sábado</h3>
+                    <span class="badge badge-open">Abierto</span>
+                </div>
+                <div class="match-card-body">
+                    <p>📅 Sábado 23 de Agosto, 18:00 hs</p>
+                    <p>📍 Cancha 5 - Barrio Norte</p>
+                    <p>👥 3/10 - Quedan 7 lugares</p>
+                </div>
+                <div class="match-card-footer">
+                    <span class="organizer">Organiza: Pedro Martínez</span>
+                    <button class="btn btn-primary btn-sm">Unirse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

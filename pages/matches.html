@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.svg">
+    <title>Partidos - Futbol5</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+        <a href="dashboard.html" class="navbar-brand">
+            <img src="../img/logo.svg" alt="Futbol5">
+            <span>FUTBOL5</span>
+        </a>
+        <div class="navbar-nav">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="matches.html" class="active">Partidos</a>
+            <a href="create-match.html">Crear Partido</a>
+            <div class="navbar-user">
+                <span>Juan Pérez</span>
+                <button class="btn-logout">Cerrar sesión</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="dashboard-content">
+    <h1>⚽ Partidos</h1>
+    <p class="subtitle">Buscá y unite a partidos disponibles</p>
+
+    <!-- FILTROS -->
+    <div class="filter-card">
+        <div class="form-row" style="grid-template-columns: 1fr 1fr 1fr auto;">
+            <div class="form-group" style="margin-bottom:0;">
+                <input type="text" placeholder="🔍 Buscar por nombre o ubicación...">
+            </div>
+            <div class="form-group" style="margin-bottom:0;">
+                <select>
+                    <option>Todos los días</option>
+                    <option>Lunes</option>
+                    <option>Miércoles</option>
+                    <option>Viernes</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+            <div class="form-group" style="margin-bottom:0;">
+                <select>
+                    <option>Todos los estados</option>
+                    <option>Abierto</option>
+                    <option>Completo</option>
+                    <option>Finalizado</option>
+                </select>
+            </div>
+            <button class="btn btn-primary btn-lg">Filtrar</button>
+        </div>
+    </div>
+
+    <!-- GRID DE PARTIDOS -->
+    <div class="matches-grid">
+
+        <!-- PARTIDO 1 -->
+        <div class="match-card">
+            <div class="match-card-header">
+                <h3>Fútbol5 - Lunes</h3>
+                <span class="badge badge-open">Abierto</span>
+            </div>
+            <div class="match-card-body">
+                <p>📅 Lunes 18 de Agosto, 20:00 hs</p>
+                <p>📍 Cancha Municipal - Av. Principal 123</p>
+                <p>👥 7/10 jugadores</p>
+            </div>
+            <div class="match-card-footer">
+                <span class="organizer">Organiza: Carlos López</span>
+                <a href="match-detail.html" class="btn btn-primary btn-sm">Ver detalle</a>
+            </div>
+        </div>
+
+        <!-- PARTIDO 2 -->
+        <div class="match-card">
+            <div class="match-card-header">
+                <h3>Fútbol5 - Miércoles</h3>
+                <span class="badge badge-full">Completo</span>
+            </div>
+            <div class="match-card-body">
+                <p>📅 Miércoles 20 de Agosto, 20:00 hs</p>
+                <p>📍 Polideportivo Central</p>
+                <p>👥 10/10 jugadores</p>
+            </div>
+            <div class="match-card-footer">
+                <span class="organizer">Organiza: María García</span>
+                <a href="match-detail.html" class="btn btn-sm" style="background:var(--gray-300);color:var(--gray-600);">Ver detalle</a>
+            </div>
+        </div>
+
+        <!-- PARTIDO 3 -->
+        <div class="match-card">
+            <div class="match-card-header">
+                <h3>Fútbol5 - Viernes</h3>
+                <span class="badge badge-open">Abierto</span>
+            </div>
+            <div class="match-card-body">
+                <p>📅 Viernes 22 de Agosto, 20:00 hs</p>
+                <p>📍 Club Atlético Norte</p>
+                <p>👥 5/10 jugadores</p>
+            </div>
+            <div class="match-card-footer">
+                <span class="organizer">Organiza: Pedro Martínez</span>
+                <a href="match-detail.html" class="btn btn-primary btn-sm">Ver detalle</a>
+            </div>
+        </div>
+
+        <!-- PARTIDO 4 -->
+        <div class="match-card">
+            <div class="match-card-header">
+                <h3>Fútbol5 - Sábado</h3>
+                <span class="badge badge-open">Abierto</span>
+            </div>
+            <div class="match-card-body">
+                <p>📅 Sábado 23 de Agosto, 18:00 hs</p>
+                <p>📍 Cancha 5 - Barrio Norte</p>
+                <p>👥 3/10 jugadores</p>
+            </div>
+            <div class="match-card-footer">
+                <span class="organizer">Organiza: Ana Rodríguez</span>
+                <a href="match-detail.html" class="btn btn-primary btn-sm">Ver detalle</a>
+            </div>
+        </div>
+
+        <!-- PARTIDO 5 -->
+        <div class="match-card">
+            <div class="match-card-header">
+                <h3>Fútbol5 - Domingo</h3>
+                <span class="badge badge-cancelled">Cancelado</span>
+            </div>
+            <div class="match-card-body">
+                <p>📅 Domingo 24 de Agosto, 10:00 hs</p>
+                <p>📍 Cancha Deportiva Sur</p>
+                <p>👥 2/10 jugadores</p>
+            </div>
+            <div class="match-card-footer">
+                <span class="organizer">Organiza: Luis Fernández</span>
+                <a href="match-detail.html" class="btn btn-sm" style="background:var(--gray-300);color:var(--gray-600);">Ver detalle</a>
+            </div>
+        </div>
+
+        <!-- PARTIDO 6 -->
+        <div class="match-card">
+            <div class="match-card-header">
+                <h3>Fútbol5 - Lunes</h3>
+                <span class="badge badge-completed">Finalizado</span>
+            </div>
+            <div class="match-card-body">
+                <p>📅 Lunes 11 de Agosto, 20:00 hs</p>
+                <p>📍 Cancha Municipal - Av. Principal 123</p>
+                <p>👥 10/10 jugadores</p>
+            </div>
+            <div class="match-card-footer">
+                <span class="organizer">Organiza: Carlos López</span>
+                <a href="match-detail.html" class="btn btn-sm" style="background:var(--gray-300);color:var(--gray-600);">Ver detalle</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

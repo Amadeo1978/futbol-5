@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.svg">
+    <title>Crear Partido - Futbol5</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+        <a href="dashboard.html" class="navbar-brand">
+            <img src="../img/logo.svg" alt="Futbol5">
+            <span>FUTBOL5</span>
+        </a>
+        <div class="navbar-nav">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="matches.html">Partidos</a>
+            <a href="create-match.html" class="active">Crear Partido</a>
+            <div class="navbar-user">
+                <span>Juan Pérez</span>
+                <button class="btn-logout">Cerrar sesión</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="dashboard-content">
+    <a href="dashboard.html" class="back-btn">← Volver al dashboard</a>
+
+    <div class="create-card">
+        <h1>⚽ Crear Partido</h1>
+        <p class="subtitle">Organizá un nuevo partido de fútbol a 5</p>
+
+        <form>
+            <div class="form-group">
+                <label>Nombre del Partido</label>
+                <input type="text" placeholder="Ej: Fútbol5 - Viernes" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Fecha</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Horario</label>
+                    <select required>
+                        <option value="">Seleccionar horario</option>
+                        <option>20:00 - 21:00</option>
+                        <option>18:00 - 19:00</option>
+                        <option>19:00 - 20:00</option>
+                        <option>21:00 - 22:00</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Ubicación</label>
+                <input type="text" placeholder="Ej: Cancha Municipal - Av. Principal 123" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Cantidad máxima de jugadores</label>
+                    <select required>
+                        <option value="10">10 jugadores (5 vs 5)</option>
+                        <option value="8">8 jugadores (4 vs 4)</option>
+                        <option value="12">12 jugadores (6 vs 6)</option>
+                        <option value="14">14 jugadores (7 vs 7)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Confirmar antes de</label>
+                    <input type="text" value="24 horas antes del partido" disabled style="background:var(--gray-100);">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Descripción (opcional)</label>
+                <textarea rows="3" placeholder="Ej: Partido amistoso, todos los niveles bienvenidos. Traer pelota..."></textarea>
+            </div>
+
+            <div class="create-summary">
+                <h3>📋 Resumen del Partido</h3>
+                <p>Se creará un partido con los datos ingresados. La hora de confirmación será automáticamente 24 horas antes del horario del partido. Los jugadores podrán unirse hasta completar el cupo.</p>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-lg" style="background:var(--gray-200);color:var(--gray-600);">Cancelar</button>
+                <button type="submit" class="btn btn-primary btn-lg">⚽ Crear Partido</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.svg">
+    <title>Futbol5 - Encuentra tu partido</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR HOME -->
+<nav class="navbar navbar-home">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">
+            <img src="img/logo.svg" alt="Futbol5">
+            <span>FUTBOL5</span>
+        </a>
+        <div class="navbar-nav">
+            <a href="pages/login.html">Iniciar Sesión</a>
+            <a href="pages/register.html" class="btn btn-secondary btn-sm">Registrarse</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <div>
+            <img src="img/logo.svg" alt="Futbol5 Logo">
+            <h1>Encuentra tu partido<br><span>de fútbol a 5</span></h1>
+            <p>Conecta con personas que comparten tu pasión por el fútbol. Organiza partidos, únete a equipos y vive la experiencia deportiva.</p>
+            <div class="hero-btns">
+                <a href="pages/register.html" class="btn btn-secondary btn-lg">Empezar ahora</a>
+                <a href="pages/login.html" class="btn btn-outline btn-lg">Ya tengo cuenta</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <h2>¿Cómo funciona?</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">📝</div>
+            <h3>1. Regístrate</h3>
+            <p>Crea tu cuenta gratuita y completa tu perfil deportivo</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⚽</div>
+            <h3>2. Busca partidos</h3>
+            <p>Encuentra partidos disponibles en tu zona</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>3. Únete y juega</h3>
+            <p>Reserva tu lugar y disfruta del fútbol con amigos</p>
+        </div>
+    </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="schedule">
+    <h2>📅 Horarios de Partidos</h2>
+    <p class="subtitle">Lunes, Miércoles y Viernes de 20:00 a 21:00 hs</p>
+    <div class="schedule-grid">
+        <div class="schedule-card">
+            <div class="day">LUNES</div>
+            <div class="time">20:00</div>
+            <div class="time-sub">a 21:00 hs</div>
+            <div class="spots">✅ 7/10 lugares disponibles</div>
+        </div>
+        <div class="schedule-card">
+            <div class="day">MIÉRCOLES</div>
+            <div class="time">20:00</div>
+            <div class="time-sub">a 21:00 hs</div>
+            <div class="spots">✅ 4/10 lugares disponibles</div>
+        </div>
+        <div class="schedule-card">
+            <div class="day">VIERNES</div>
+            <div class="time">20:00</div>
+            <div class="time-sub">a 21:00 hs</div>
+            <div class="spots full">❌ COMPLETO</div>
+        </div>
+    </div>
+</section>
+
+<!-- RANKING -->
+<section class="ranking">
+    <h2>🏆 Ranking de Asistentes</h2>
+    <p class="subtitle">Acumula puntos y obtén descuentos en futuros eventos</p>
+    <div class="ranking-grid">
+        <div class="rank-card rank-bronce">
+            <div class="rank-badge">🥉</div>
+            <h3>Bronce</h3>
+            <div class="discount">5%</div>
+            <div class="desc">1-3 asistencias<br>Descuento en próximos eventos</div>
+        </div>
+        <div class="rank-card rank-plata">
+            <div class="rank-badge">🥈</div>
+            <h3>Plata</h3>
+            <div class="discount">10%</div>
+            <div class="desc">4-7 asistencias<br>Prioridad en inscripciones</div>
+        </div>
+        <div class="rank-card rank-oro">
+            <div class="rank-badge">🥇</div>
+            <h3>Oro</h3>
+            <div class="discount">15%</div>
+            <div class="desc">8-12 asistencias<br>Acceso a eventos exclusivos</div>
+        </div>
+        <div class="rank-card rank-diamante">
+            <div class="rank-badge">💎</div>
+            <h3>Diamante</h3>
+            <div class="discount">25%</div>
+            <div class="desc">13+ asistencias<br>Beneficios premium totales</div>
+        </div>
+    </div>
+</section>
+
+<!-- REGLAMENTO -->
+<section class="regulations">
+    <div class="reg-card">
+        <h2>📜 Reglamento</h2>
+        <p class="subtitle">Lee y acepta las normas antes de participar</p>
+
+        <div class="reg-tabs">
+            <button class="reg-tab active" onclick="showReg('conducta', this)">🤝 Código de Conducta</button>
+            <button class="reg-tab" onclick="showReg('responsabilidades', this)">📋 Responsabilidades</button>
+            <button class="reg-tab" onclick="showReg('general', this)">📌 Normas Generales</button>
+        </div>
+
+        <div id="reg-conducta">
+            <div class="reg-rules">
+                <div class="reg-rule">
+                    <div class="icon">🤝</div>
+                    <div>
+                        <h4>Respeto entre jugadores</h4>
+                        <p>Se debe mantener un trato respetuoso en todo momento. Está prohibido el insulto o la agresión.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">⚽</div>
+                    <div>
+                        <h4>Juego limpio</h4>
+                        <p>Respetar las reglas del fútbol a 5. Las faltas intencionales serán sancionadas.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">⏰</div>
+                    <div>
+                        <h4>Puntualidad</h4>
+                        <p>Llegar 10 minutos antes del horario programado.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">✅</div>
+                    <div>
+                        <h4>Confirmación de asistencia</h4>
+                        <p>Confirmar con al menos 24 horas de anticipación.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">👟</div>
+                    <div>
+                        <h4>Equipamiento adecuado</h4>
+                        <p>Usar calzado deportivo y ropa deportiva es obligatorio.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">🚫</div>
+                    <div>
+                        <h4>Prohibido alcohol y drogas</h4>
+                        <p>No se permite la ingesta antes o durante el partido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="reg-responsabilidades" style="display:none;">
+            <div class="reg-rules">
+                <div class="reg-rule">
+                    <div class="icon">📋</div>
+                    <div>
+                        <h4>Organización del evento</h4>
+                        <p>Coordinar partidos, confirmar cancha y horarios.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">👥</div>
+                    <div>
+                        <h4>Gestión de jugadores</h4>
+                        <p>Administrar inscripciones y confirmar asistencia.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">🛡️</div>
+                    <div>
+                        <h4>Seguridad</h4>
+                        <p>Velar por la seguridad de todos los participantes.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">⚖️</div>
+                    <div>
+                        <h4>Resolución de conflictos</h4>
+                        <p>Mediar en disputas y tomar decisiones necesarias.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">🚪</div>
+                    <div>
+                        <h4>Derecho de admisión</h4>
+                        <p>Se reserva el derecho de admisión y permanencia.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">📢</div>
+                    <div>
+                        <h4>Comunicación</h4>
+                        <p>Mantener informados a los jugadores sobre novedades.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reg-warning">
+                <h4>⚠️ Derecho de Admisión</h4>
+                <p>El organizador se reserva el derecho de admisión y permanencia en el evento. Podrá solicitar la salida de cualquier persona que:</p>
+                <ul>
+                    <li>Incumpla el código de conducta</li>
+                    <li>Ponga en riesgo la integridad de otros</li>
+                    <li>Presente conductas antideportivas</li>
+                    <li>No respete las decisiones del organizador</li>
+                    <li>Genere conflictos o disturbios</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="reg-general" style="display:none;">
+            <div class="reg-rules">
+                <div class="reg-rule">
+                    <div class="icon">📅</div>
+                    <div>
+                        <h4>Horarios establecidos</h4>
+                        <p>Lunes, miércoles y viernes de 20:00 a 21:00 hs.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">👥</div>
+                    <div>
+                        <h4>Cantidad de jugadores</h4>
+                        <p>Limitado a 10 jugadores (5 vs 5).</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">🏆</div>
+                    <div>
+                        <h4>Sistema de ranking</h4>
+                        <p>Acumula puntos y obtén descuentos.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">❌</div>
+                    <div>
+                        <h4>Cancelaciones</h4>
+                        <p>Con al menos 24 horas de anticipación.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">💪</div>
+                    <div>
+                        <h4>Responsabilidad personal</h4>
+                        <p>Cada jugador es responsable de su seguridad.</p>
+                    </div>
+                </div>
+                <div class="reg-rule">
+                    <div class="icon">🎒</div>
+                    <div>
+                        <h4>Propiedad</h4>
+                        <p>La organización no se hace responsable por pertenencias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reg-accept">
+            <div>
+                <h4>¿Aceptas el reglamento?</h4>
+                <p>Al continuar, confirmas que has leído y aceptas todas las normas.</p>
+            </div>
+            <div class="reg-accept-btns">
+                <button class="btn btn-sm" style="background:var(--gray-300);color:var(--gray-700);">No acepto</button>
+                <button class="btn btn-sm btn-primary">Acepto</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2024 Futbol5. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+function showReg(tab, btn) {
+    document.querySelectorAll('.reg-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('reg-conducta').style.display = 'none';
+    document.getElementById('reg-responsabilidades').style.display = 'none';
+    document.getElementById('reg-general').style.display = 'none';
+    document.getElementById('reg-' + tab).style.display = 'block';
+}
+</script>
+
+</body>
+</html>
